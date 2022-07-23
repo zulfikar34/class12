@@ -1,0 +1,154 @@
+/* common css start*/
+    :root{
+        --open:'Open Sans', sans-serif;
+        --oswald:'Oswald', sans-serif;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    a{
+        text-decoration: none;
+
+    }
+
+    .container{
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .row,
+    .flex_wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img{
+        max-width: 100%;
+        display: block;
+    }
+/* common css end */
+
+
+/* header css start*/
+#header{
+    background: #0771b9;
+}
+
+#header .container{
+    justify-content: space-between;
+    padding: 16px 0px;
+}
+#header .top_header_left p{
+    font-family: var(--open);
+    font-size: 14px;
+    color: #e7e7e7;
+   
+}
+
+#header .top_header_right ul li a{
+    color: #e7e7e7;
+    padding: 0px 14px;
+    align-items: center;
+    transition: 0.3s linear;
+
+}
+
+#header .top_header_right ul li:hover a{
+    color: #353535;
+    background: #0771b9;
+}
+
+#header nav{
+    background: #ffffff;
+}
+#header nav .logo{
+    width: 20%;
+    padding-top: 10px;
+}
+#header nav .menu{
+    width: 80%;
+    justify-content: flex-end;
+    
+}
+#header nav .menu ul li a{
+    text-transform: capitalize;
+    font-family: var(--open);
+    color: #4e4e4e;
+    padding: 30px 10px;
+    display: inline-block;
+    transition: 0.3s linear;
+}
+#header nav .menu ul li:hover a{
+   color: #0872b9;
+}
+/* header css end */
+
+/* CONTACT start*/
+#banner{
+    background: url(../img/contact.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0px;
+}
+#banner::after{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    content: '';
+    inset: 0;
+    z-index: -1;
+}
+#banner .banner_content{
+    width: 50%;
+    margin-left: auto;
+    text-align: right;
+}
+#banner .banner_content h1 small{
+    display: block;
+    line-height: 0.5;
+    padding-top: 20px;
+}
+#banner .banner_content small{
+    font-family: var(--oswald);
+    color: #ffffff;
+    
+    
+}
+#banner .banner_content h1{
+    font-family: var(--oswald);
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    
+}
+#banner .banner_content p{
+    font-family: var(--open);
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+#banner .banner_content  a{
+    border: 1px solid#ffffff;
+    padding: 0px 20px;
+    color: #ffffff;
+    margin: 20px 10px;
+    transition: 0.3s linear;
+}
+#banner .banner_content:hover a{
+    background: #0872b9;
+    border: none;
+}
+
+
+
+/* CONTACT end */
